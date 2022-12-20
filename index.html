@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ID Generator</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .qr-code {
+        background-image: url("assets/img/QRCODE.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="main-container">
+        <div class="id-card-container" id="id-card-container">
+            <div class="id-head">
+                <div class="id-head-text">
+                    <h2>Federal University Dutse</h2>
+                    <p>Dutse, Jigawa State of Nigeria</p>
+                </div>
+                
+            </div>
+            <div class="image-div passportDiv">
+                
+            </div>
+            
+            <div class="name-text">
+                <h3 class="student-fullname">Student Name</h3>
+                <p>Surname / First Name / Middle Name</p>
+            </div>
+            <div class="student-details">
+                <div class="registration">
+                    <p>ID No.</p>
+                    <p class="details id-no">000000000000</p>
+                </div>
+                <div class="course">
+                    <p>Course of Study</p>
+                    <p class="details id-course-name">############</p>
+                </div>
+                <div class="admission">
+                    <p>Year of Admis.</p>
+                    <p class="details id-admission-year">DD/MM/YY</p>
+                </div>
+                <div class="expiry">
+                    <p>Expiry Date</p>
+                    <p class="details id-expiry-date"><span class="month">MM</span>/<span class="year">YY</span></p>
+                </div>
+            </div>
+            <div class="qr-code"></div>
+        </div>
+        <div class="container">
+            <label for="Student9Name">Student's Name:
+                <input type="text" name="student-Name" id="form-student-name" required>
+            </label>
+            <label for="Registration-Number">Registration Number:
+                <input type="text" name="Registration Number" id="form-registration-number" required>
+            </label>
+            <label for="Course-of-Study">Course of Study:
+                <input type="text" name="Course of Study" id="form-course-of-study" required>
+            </label>
+            <label for="Year-of-admission">Year of Admission:
+                <input type="text" name="Year of Admission" id="form-year-of-admission" required>
+            </label>
+            <label for="passport">Import your Passport:
+                <input type="file" name="passport" id="passport" required>
+            </label>
+               
+            <div class="date-container">
+                <div class="exp-month">
+                    <label for="expiration-mm">Expiration MM:
+                        <select name="expiration-month" id="form-expiration-mm">
+                            <option disabled selected hidden>Months</option>
+                            <option value="JAN">Jan</option>
+                            <option value="FEN">Feb</option>
+                            <option value="MAR">Mar</option>
+                            <option value="APR">Apr</option>
+                            <option value="MAY">May</option>
+                            <option value="JUNE">Jun</option>
+                            <option value="JULY">Jul</option>
+                            <option value="AUG">Aug</option>
+                            <option value="SEPT">Sept</option>
+                            <option value="OCT">Oct</option>
+                            <option value="NOV">Nov</option>
+                            <option value="DEC">Dec</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="exp-year">
+                    <label for="expiration-year">Expiration YY
+                        <select name="expiration year" id="form-expiration-year">
+                            <option disabled selected hidden>YEAR</option>
+                            <option value="2029">2029</option>
+                            <option value="2028">2028</option>
+                            <option value="2027">2027</option>
+                            <option value="2026">2026</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                        </select>
+                    </label>
+                </div>
+        
+            </div>
+            
+            <button class="submit" download="Id-card.png">Submit & donwload</button>
+        </div>
+    </div>
+
+    <footer>
+       <!-- <img src="assets/svg/powered.SVG" alt=""> -->
+    </footer>
+    
+    <script src="assets/js/index.js"></script>
+    <script src="assets/dom-to-image/dom-to-image.min.js"></script>
+    <script src="assets/dom-to-canva/dom-to-canva.js"></script>
+</body>
+</html>

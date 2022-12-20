@@ -1,0 +1,452 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;    
+}
+
+.main-container {
+    width: 47%;
+    position: absolute;
+    margin-top: 65px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(145deg, #ffffff, #ffffffc4);
+    box-shadow: 0px 0px 5px #80808076,
+                0px 0px 5px white;
+    border-radius: 0 40px 0 40px;
+}
+
+.container {
+    width: 90%;
+    margin: 18% auto auto auto;
+    padding: 20px;
+}
+
+label {
+    text-transform: uppercase;
+    margin: 3px 0 3px 0;
+    color: #3f3f3f;
+   
+}
+label, input {
+    display: block;
+    margin-top: 4px;
+    font-size: 18px;
+}
+
+.container input {
+    margin-bottom: 5px;
+    width: 98%;
+    height: 30px;
+    border: 1.5px solid #cac6c6;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.container input:hover {
+    box-shadow: 0px 0px 3px #80808044,
+    0px 0px 3px white;
+}
+
+.container input[type=file]{
+    padding: 2px 6px;
+}
+.date-container {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+select {
+    width: 100%;
+    height: 34px;
+    margin: 5px 0 10px 0;
+    border: 1.5px solid #cac6c6;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    padding: 2px 10px;
+    font-size: 18px;
+}
+
+select:hover {
+    box-shadow: 0px 0px 3px #80808044,
+    0px 0px 3px white;
+}
+.date-container .exp-year {
+    width: 50%;
+}
+
+
+.date-container .exp-month {
+    width: 50%;
+
+}
+
+.submit {
+    width: 100%;
+    height: 35px;
+    background-image: linear-gradient(145deg, #14326e, #2656b6);
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.submit:hover {
+    background-image: linear-gradient(145deg, #14326ed5, #2656b6d5);
+    letter-spacing: 0.5px;
+}
+
+/* Id-Card Section */
+
+.id-card-container {
+    width: 56%;
+    background-image: linear-gradient(145deg, #eff3fad5, #cfdffad5);
+    position: absolute;
+    top: 0; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 39%;
+    margin: auto auto;
+    border: 0.1px solid #14326e5e;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(128, 128, 128, 0.3),
+    0 0 5px rgba(255, 255, 255, 0.3);
+    
+}
+
+.id-card-container .id-head {
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(145deg, #14326e, #2656b6);
+    border-radius: 5px 5px 0 0 ;
+    box-shadow:  inset 0px 10px 7px #23232383,
+             inset -0px -0px 5px #a09f9fe3;
+}
+
+.id-card-container .id-head-text {
+    line-height: 0.3;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    text-align: right;
+    right: 15px;
+    top: 3px;
+}
+.id-card-container .id-head p {
+   font-size: 14px;
+}
+
+.id-card-container .id-head-text h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+}
+
+
+.import-picture input {
+    width: 10px;
+}
+.image-div {
+    width: 115px;
+    height: 115px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 17%;
+    left: 5%;
+    border: 1.5px solid white;
+    box-shadow:  inset 0px 10px 7px #204a9e,
+              -0px -0px 5px #14326e;
+            
+}
+
+.name-text {
+    width: 60%;
+    position: absolute;
+    right: 0;
+}
+
+.name-text h3 {
+    line-height: 0.2;
+    color: #14326e;
+    font-size: 1.4rem;
+}
+
+.name-text p {
+    font-size: 10px;
+    line-height: 0;
+    letter-spacing: 0.5px;
+    color: gray;
+}
+
+.student-details {
+    width: 70%;
+    display: flex;
+    font-size: 14px;
+    flex-wrap: wrap;
+    gap: 10px;
+    line-height: 0.1;
+    position: absolute;
+    bottom: 0;
+    padding: 0 20px;
+}
+
+.registration, .course {
+    margin-bottom: -15px;
+}
+
+.registration, .course, .admission, .expiry {
+    width: 45%;
+}
+.details {
+    font-size: 15px;
+    color: #14326e;
+}
+
+.qr-code {
+    width: 17.5%;
+    height: 80px;
+    position: absolute;
+    right: 8%;
+    bottom: 7px;
+    padding: 1px;  
+}
+
+footer{
+    width: 10%;
+    margin-left: 46%;
+    position: absolute;
+    bottom: 80px;
+    
+}
+
+footer img {
+    width: 120px;
+}
+
+
+
+@media only screen and (max-width: 1351px) {
+    .main-container {
+        width: 50%;
+        margin-top: 120px;
+
+    }
+}
+
+@media only screen and (max-width: 1267px) {
+    .main-container {
+        width: 53%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-container {
+        width: 57%;
+    }
+
+    .id-card-container .id-head p {
+        font-size: 12.5px;
+     }
+
+}
+
+@media only screen and (max-width: 1042px) {
+    .main-container {
+        width: 63%;
+    } 
+
+}
+
+@media only screen and (max-width: 938px) {
+    .main-container {
+        width: 68%;
+    } 
+
+}
+
+@media only screen and (max-width: 870px) {
+    .main-container {
+        width: 76%;
+    } 
+
+}
+
+@media only screen and (max-width: 794px) {
+    .main-container {
+        width: 82%;
+    } 
+
+}
+
+@media only screen and (max-width: 730px) {
+    .main-container {
+        width: 90%;
+    } 
+
+}
+
+@media only screen and (max-width: 654px) {
+    .main-container {
+        width: 95%;
+    } 
+
+}
+
+@media only screen and (max-width: 620px) {
+    .id-card-container {
+        width: 65%;
+    }
+
+}
+
+@media only screen and (max-width: 570px) {
+    .id-card-container {
+        width: 70%;
+    }
+
+    .image-div {
+        width: 110px;
+        height: 110px;    
+    }
+
+}
+
+@media only screen and (max-width: 520px) {
+    .id-card-container {
+        width: 78%;
+    }
+
+    .image-div {
+        width: 105px;
+        height: 105px;    
+    }
+
+    .container {
+        margin: 25% auto auto auto;
+    }
+
+}
+
+@media only screen and (max-width: 464px) {
+    .id-card-container {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .id-card-container {
+        width: 92%;
+    }
+
+    .container {
+        margin: 28% auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 392px) {
+    .id-card-container .id-head p {
+        font-size: 12px;
+     }
+     
+     .id-card-container .id-head-text h2 {
+         font-size: 20px;
+     }
+
+     .image-div {
+        width: 100px;
+        height: 100px;    
+    }
+
+    .name-text h3 {
+        line-height: 0.1;
+        font-size: 1.3rem;
+    }
+
+    .details {
+        font-size: 12px;
+        color: #14326e;
+    }
+    
+    .qr-code {
+        width: 20%;
+        right: 6%;
+        bottom: 10px;
+    }
+
+    .student-details {
+        width: 80%;
+        font-size: 13px;
+        gap: 8px;
+    }
+
+    .student-details {
+        padding: 10px 20px;
+    }
+
+    label, input, select {
+        font-size: 16px;
+    } 
+}
+
+@media only screen and (max-width: 366px) {
+    .student-details {
+        width: 75%;
+        font-size: 12px;
+        gap: 7px;
+    } 
+
+    .name-text p {
+        font-size: 8px;
+        letter-spacing: 0.3px;
+    }
+
+    .id-card-container .id-head p {
+        font-size: 11px;
+     }
+     
+     .id-card-container .id-head-text h2 {
+         font-size: 18px;
+     }
+
+     .qr-code {
+        width: 22%;
+        right: 6%;
+        bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .id-card-container {
+        width: 95%;
+    }
+
+    label, input, select {
+        font-size: 15px;
+    } 
+
+    .container {
+        margin: 32% auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 335px) {
+    .id-card-container {
+        width: 100%;
+    }
+
+    label, input, select {
+        font-size: 14px;
+    } 
+}
+
+
